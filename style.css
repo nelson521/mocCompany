@@ -48,7 +48,7 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 #welcome-section .container {
@@ -74,7 +74,17 @@ a {
 }
 
 /* Client Section */
+
 #clients-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+}
+/* .description {
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
@@ -82,7 +92,7 @@ a {
   text-align: center;
   min-height: 100vh;
   padding: 2rem;
-}
+} */
 
 #clients-section h3 {
   color: rgb(108, 99, 255);
@@ -104,8 +114,8 @@ a {
 }
 
 .client-graphic {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -120,23 +130,27 @@ a {
 .box:first-child {
   background-color: rgb(108, 99, 255);
   grid-column: 1 / span 2;
+  transform: rotate(36deg);
 }
 
 .box:nth-child(2) {
   background-color: rgb(95, 197, 212);
   grid-row: 2 / span 2;
+  transform: rotate(32deg);
 }
 
 .box:nth-child(3) {
   background-color: rgb(246, 248, 169);
   grid-row: 2;
   grid-column: 3 / span 3;
+  transform: rotate(288deg);
 }
 
 .box:nth-child(4) {
   background-color: red;
   grid-row: 3;
   grid-column: 3 / span 3;
+  transform: rotate(252deg);
 }
 
 .box:nth-child(5) {
@@ -146,7 +160,7 @@ a {
 }
 
 .box:nth-child(6) {
-  background-color: rgb(246, 248, 169);
+  background-color: rgb(232 169 248);
   grid-row: 2;
   grid-column: 3 / span 3;
 }
