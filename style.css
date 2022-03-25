@@ -206,3 +206,18 @@ a {
     margin-top: 3rem;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  #clients-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box:nth-child(2) {
+    transform: rotate(349deg);
+  }
+}
