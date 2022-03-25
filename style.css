@@ -73,6 +73,37 @@ a {
   line-height: 1.8;
 }
 
+/* Client Section */
+#clients-section {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+#clients-section h3 {
+  color: rgb(108, 99, 255);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#clients-section h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+#clients-section p {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 1.8;
+}
+/* End of client section */
+
 @media only screen and (max-width: 1024px) {
   .nav-flex-container {
     display: flex;
